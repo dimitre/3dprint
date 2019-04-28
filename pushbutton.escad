@@ -1,0 +1,16 @@
+/*
+
+cd /Users/d/Desktop/3dprint/ImplicitCad/
+~/.cabal/bin/extopenscad pushbutton.escad
+
+*/
+
+$res=0.05;
+
+difference(){
+	cube(size = [15, 15, 2], center = true, r=1);
+	translate([-2.5, 0, 0])
+	cube(size = [1, 1, 8], center = true);
+	translate([2.5, 0, 0])
+	cube(size = [1, 1, 8], center = true);
+}
