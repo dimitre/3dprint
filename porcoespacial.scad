@@ -10,7 +10,7 @@ module pe() {
     difference(r=1) 
     {
         union() {
-            cylinder(r=1.8, h=18);
+            cylinder(r=1.5, h=18);
             rotate(a=[90,0,0])
             translate([0,0,-1])
             cylinder(r=2.5, h=10, center=true);
@@ -44,7 +44,7 @@ module braco() {
         union() {
             sphere(1.8);
             translate([0,0,-11]) {
-                cylinder (r=1.5, h=11);
+                cylinder(r=1.5, h=11);
                 translate([0,0,-1.4])
                 rotate([90,0,-90])
                 difference() {
